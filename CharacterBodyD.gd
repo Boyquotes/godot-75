@@ -20,7 +20,7 @@ func _unhandled_input(event: InputEvent):
 			camera.rotate_x(-event.relative.y * .005)
 			camera.rotation.x = clamp(camera.rotation.x, -PI/2, (PI/2))
 func _physics_process(delta):
-	
+	$camera/SubViewportContainer/SubViewport/gun.global_transform = camera.global_transformS
 	if not is_on_floor():
 		velocity.y -= gravity * delta
 	
