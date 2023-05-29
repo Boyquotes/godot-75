@@ -1,6 +1,10 @@
 [gd_scene load_steps=11 format=3 uid="uid://05sperpcw3oe"]
 
+<<<<<<< Updated upstream
 [ext_resource type="Script" path="res://game.gd" id="1_obdug"]
+=======
+[ext_resource type="Script" path="res://game.gd" id="1_m2o23"]
+>>>>>>> Stashed changes
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vqxns"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -29,7 +33,11 @@ glow_enabled = true
 data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
 
 [node name="game" type="Node3D"]
+<<<<<<< Updated upstream
 script = ExtResource("1_obdug")
+=======
+script = ExtResource("1_m2o23")
+>>>>>>> Stashed changes
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_c4cqv")

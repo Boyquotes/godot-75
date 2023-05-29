@@ -1,5 +1,6 @@
-[gd_scene load_steps=36 format=3 uid="uid://ci5rdqot5fvab"]
+[gd_scene load_steps=33 format=3 uid="uid://ci5rdqot5fvab"]
 
+<<<<<<< Updated upstream
 [ext_resource type="Script" path="res://CharacterBodyD.gd" id="1_pnxef"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4c8fw"]
@@ -14,6 +15,9 @@ background_mode = 2
 sky = SubResource("Sky_k2nk4")
 tonemap_mode = 2
 glow_enabled = true
+=======
+[ext_resource type="Script" path="res://CharacterBodyD.gd" id="1_0nvuk"]
+>>>>>>> Stashed changes
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7rmtw"]
 
@@ -307,9 +311,6 @@ data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0
 
 [node name="Node3D" type="Node3D" groups=["player"]]
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_rw23u")
-
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.864552, -0.497055, -0.0740692, -0.146578, 0.108431, 0.983238, -0.480692, 0.860917, -0.166601, 2.14244, 74.588, -1.7179)
 shadow_enabled = true
@@ -318,7 +319,11 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0144406, 1.12455, 0.0538783)
 collision_layer = 35
 collision_mask = 7
+<<<<<<< Updated upstream
 script = ExtResource("1_pnxef")
+=======
+script = ExtResource("1_0nvuk")
+>>>>>>> Stashed changes
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
 shape = SubResource("CapsuleShape3D_7rmtw")
